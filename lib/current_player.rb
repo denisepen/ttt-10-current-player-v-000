@@ -2,7 +2,8 @@
 
 def turn_count(board)
     board.count do |space|
-    space != " "
+    # space != " "
+    space == "X" || space == "O"
   end
 end
 
